@@ -28,7 +28,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-runtime-def/secrets/0.0.8";
+      url = "github:pythoneda-runtime-def/secrets/0.0.9";
     };
     pythoneda-runtime-secrets-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -38,7 +38,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-runtime-def/secrets-infrastructure/0.0.8";
+      url = "github:pythoneda-runtime-def/secrets-infrastructure/0.0.9";
     };
     pythoneda-shared-pythonlang-application = {
       inputs.flake-utils.follows = "flake-utils";
@@ -47,7 +47,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/application/0.0.104";
+      url = "github:pythoneda-shared-pythonlang-def/application/0.0.105";
     };
     pythoneda-shared-pythonlang-banner = {
       inputs.flake-utils.follows = "flake-utils";
@@ -59,7 +59,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.108";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.109";
     };
   };
   outputs = inputs:
@@ -68,8 +68,8 @@
       let
         org = "pythoneda-runtime";
         repo = "secrets-application";
-        version = "0.0.3";
-        sha256 = "1viiyq7zmdmw5v9s2w5djs0lbn7qm4dwallx5y5m7jlsxdnmg2j8";
+        version = "0.0.4";
+        sha256 = "12k5bajayjs5da8xk28dcqk7www1dn2i1l6s29x1p3zicdcqpazn";
         pname = "${org}-${repo}";
         pythonpackage = builtins.replaceStrings [ "-" ] [ "." ] pname;
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
