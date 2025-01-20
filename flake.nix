@@ -38,7 +38,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-runtime-def/secrets-infrastructure/0.0.15";
+      url = "github:pythoneda-runtime-def/secrets-infrastructure/0.0.16";
     };
     pythoneda-shared-pythonlang-application = {
       inputs.flake-utils.follows = "flake-utils";
@@ -47,7 +47,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/application/0.0.112";
+      url = "github:pythoneda-shared-pythonlang-def/application/0.0.113";
     };
     pythoneda-shared-pythonlang-banner = {
       inputs.flake-utils.follows = "flake-utils";
@@ -68,8 +68,8 @@
       let
         org = "pythoneda-runtime";
         repo = "secrets-application";
-        version = "0.0.4";
-        sha256 = "12k5bajayjs5da8xk28dcqk7www1dn2i1l6s29x1p3zicdcqpazn";
+        version = "0.0.5";
+        sha256 = "14511s72dr90797vbwgcpzdb2xkaalhcf0bd267vnav2n5zw823a";
         pname = "${org}-${repo}";
         pythonpackage = builtins.replaceStrings [ "-" ] [ "." ] pname;
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
